@@ -44,7 +44,7 @@
         <form action="">
           <div class="box container bg-white vh-100">
             <form>
-              <label class="fs-1" for=""><b>INIBA KO NA </b> | Login</label>
+              <label class="fs-1" for=""><b>CGDS </b> | Login</label>
               <div class="form-group mb-2 mt-4">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
