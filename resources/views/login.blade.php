@@ -30,6 +30,10 @@
     .box {
       margin-top: 220px;
     }
+
+    .sigUpLink {
+      text-decoration: none;
+    }
   </style>
 </head>
 
@@ -44,24 +48,25 @@
         <form action="">
           <div class="box container bg-white vh-100">
             <form>
-              <label class="fs-1" for=""><b>CGasdasd </b> | Login</label>
-              <div class="form-group mb-2 mt-4">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <label class="fs-1" for=""><b>CGDS </b> | Login</label>
+              <div class="form-floating mt-3 mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
               </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
               </div>
-              <div class="form-group form-check">
+              <div class="form-group form-check mt-2">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Keep me logged in</label>
               </div>
-
+              <a href="{{ URL::to('dashboard') }}"><button type="button" class="btn btn-primary float-end">Login</button></a>
             </form>
-
-            <a href="{{ URL::to('dashboard') }}"><button type="button" class="btn btn-primary float-end">Login</button></a>
+            <br><br><br><br>
+            <div class="d-">
+              <label class="position-relative top-50 start-50 translate-middle" for="">Don't have an account? <a href="{{ URL::to('dashboard') }}" class="sigUpLink">Sign Up</a></label>
+            </div>
           </div>
         </form>
       </div>

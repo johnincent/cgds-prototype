@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
-
+// Route::get('/', [AuthenticationController::class, 'index']);
+Route::get('login', [AuthenticationController::class, 'login']);
 Route::get('dashboard', [AuthenticationController::class, 'dashboard']);
+Route::get('signup', [AuthenticationController::class, 'signup']);
+Route::get('graduates', [AuthenticationController::class, 'graduates']);
